@@ -1,4 +1,4 @@
-name: "Combine Dependabot PRs"
+name: "Batch Dependabot PRs"
 description: "Combine multiple Dependabot PRs into a single PR to simplify dependency updates"
 branding:
   icon: "git-merge"
