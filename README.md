@@ -34,7 +34,12 @@ Create a new action in your repo by creating a file called `.github/workflows/co
 ```yml
 name: "Combine Dependabot PRs"
 on:
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      branches:
+        description: 'Comma separate string of PRs to combine'
+        required: false
+        type: string
 
 jobs:
   combine-prs:
